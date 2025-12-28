@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
 
     @Test(priority = 3, description = "Navigate and add product")
     public void GotoProduct() throws InterruptedException {
-        String productName = ConfigReader.get("productName");
+        String productName = ConfigReader.get("productsName");
         MainPage main = new MainPage(driver);
         main.clickProductByName(productName);
         Thread.sleep(8000);

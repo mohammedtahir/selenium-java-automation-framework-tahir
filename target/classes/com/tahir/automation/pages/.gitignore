@@ -1,7 +1,0 @@
-target/
-bin/
-out/
-.vscode/
-.idea/
-*.log
-*.class
