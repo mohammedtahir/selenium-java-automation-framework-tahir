@@ -1,4 +1,3 @@
-com\tahir\automation\pages\LoginPage.class
 com\tahir\automation\utils\TestUtil.class
 com\tahir\automation\utils\ConfigReader.class
 com\tahir\automation\pages\MainPage.class

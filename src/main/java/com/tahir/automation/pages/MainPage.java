@@ -1,5 +1,6 @@
 package com.tahir.automation.pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainPage {
@@ -14,9 +17,14 @@ public class MainPage {
     public WebDriver driver;
 
     // Locators
-    // @FindBy(className = "inventory_item_name")
-    // private WebElement inventory;
+    @FindBy(id = "twotabsearchtextbox")
+    private WebElement SearchBox;
     
+    @FindBy(id = "nav-search-submit-button")
+    private WebElement SearchSubmit;
+
+     @FindBy(className =  "a-dropdown-container")
+    private WebElement sortbyCN;
 
 
     // Constructor
@@ -27,17 +35,21 @@ public class MainPage {
 
     // Actions
    
-public void clickProductByName(String productName) {
-        // if (productName == null || productName.isEmpty()) {
-        //     throw new IllegalArgumentException("productName must not be null/empty");
-        // }
-        WebElement product = driver.findElement(By.xpath("//*[@class='inventory_item_name '][text()='" + productName + "']"));
-        product.click();
-
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(30));
-        wait.until(d -> d.findElement(By.xpath("//button[@id='add-to-cart']")));
-
+public void SearchProductByName(String productName) {
+        SearchBox.sendKeys(productName);
+        SearchSubmit.click();
     }
 
+public void SortProductBy(String SortBy) {
+        sortbyCN.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement sortDropdown = wait.until(
+        ExpectedConditions.visibilityOfElementLocated(By.id("s-result-sort-select")));
+        Select sortdropDown = new Select(sortDropdown);
+        sortdropDown.selectByVisibleText(SortBy);
+    }
 
+    public void ClickOnTheProduct(String ProductToBeClicked) {
+        // Implementation for clicking on a specific product
+    }
 }

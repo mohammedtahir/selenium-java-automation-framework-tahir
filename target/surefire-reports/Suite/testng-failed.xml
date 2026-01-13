@@ -5,11 +5,9 @@
     <classes>
       <class name="com.tahir.automation.tests.LoginTest">
         <methods>
-          <include name="verifyValidLogin"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyPageTitleAfterLogin"/>
-          <include name="GotoProduct"/>
+          <include name="SortProductBy"/>
         </methods>
       </class> <!-- com.tahir.automation.tests.LoginTest -->
     </classes>
