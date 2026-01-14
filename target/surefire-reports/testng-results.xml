@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-13T13:15:27 IST" name="Suite" finished-at="2026-01-13T13:15:37 IST" duration-ms="10312">
+  <suite started-at="2026-01-14T15:14:01 IST" name="Suite" finished-at="2026-01-14T15:14:39 IST" duration-ms="38232">
     <groups>
     </groups>
-    <test started-at="2026-01-13T13:15:27 IST" name="Login Tests" finished-at="2026-01-13T13:15:37 IST" duration-ms="10312">
+    <test started-at="2026-01-14T15:14:01 IST" name="Login Tests" finished-at="2026-01-14T15:14:39 IST" duration-ms="38232">
       <class name="com.tahir.automation.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tahir.automation.tests.LoginTest@2bbf180e]" started-at="2026-01-13T13:15:27 IST" name="setUp" finished-at="2026-01-13T13:15:31 IST" duration-ms="4171" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:01 IST" name="setUp" finished-at="2026-01-14T15:14:06 IST" duration-ms="5189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GotoProduct()[pri:1, instance:com.tahir.automation.tests.LoginTest@2bbf180e]" started-at="2026-01-13T13:15:31 IST" name="GotoProduct" description="Search for product &amp; Verify Page Title" finished-at="2026-01-13T13:15:36 IST" duration-ms="5151" status="PASS">
+        <test-method signature="OpenAmazonAndLogin()[pri:1, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:06 IST" name="OpenAmazonAndLogin" description="Open Amazon Home Page &amp; Login" finished-at="2026-01-14T15:14:14 IST" duration-ms="7988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAmazonAndLogin -->
+        <test-method signature="GotoProduct()[pri:2, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:14 IST" name="GotoProduct" description="Search for product &amp; Verify Page Title" finished-at="2026-01-14T15:14:18 IST" duration-ms="4425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GotoProduct -->
-        <test-method signature="SortProductBy()[pri:2, instance:com.tahir.automation.tests.LoginTest@2bbf180e]" started-at="2026-01-13T13:15:36 IST" name="SortProductBy" description="Sort Product By" finished-at="2026-01-13T13:15:37 IST" duration-ms="625" status="PASS">
+        <test-method signature="SortProductBy()[pri:3, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:18 IST" name="SortProductBy" description="Sort Product By" finished-at="2026-01-14T15:14:19 IST" duration-ms="794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortProductBy -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tahir.automation.tests.LoginTest@2bbf180e]" started-at="2026-01-13T13:15:37 IST" name="tearDown" finished-at="2026-01-13T13:15:37 IST" duration-ms="315" status="PASS">
+        <test-method signature="ClickOnTheProduct()[pri:4, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:19 IST" name="ClickOnTheProduct" description="Click On The Product" finished-at="2026-01-14T15:14:21 IST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnTheProduct -->
+        <test-method signature="verifyProductPageTitle()[pri:5, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:21 IST" name="verifyProductPageTitle" description="Verify Product Page Title" finished-at="2026-01-14T15:14:24 IST" duration-ms="3336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPageTitle -->
+        <test-method signature="AddProductToWishlist()[pri:6, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:24 IST" name="AddProductToWishlist" description="Add to Wishlist" finished-at="2026-01-14T15:14:29 IST" duration-ms="4103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToWishlist -->
+        <test-method signature="verifyProductAddedToWishlist()[pri:7, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:29 IST" name="verifyProductAddedToWishlist" description="Verify Product Added to Wishlist" finished-at="2026-01-14T15:14:29 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToWishlist -->
+        <test-method signature="waitAfterAddingToWishlist()[pri:8, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:29 IST" name="waitAfterAddingToWishlist" description="wait after adding to Wishlist" finished-at="2026-01-14T15:14:39 IST" duration-ms="10006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterAddingToWishlist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tahir.automation.tests.LoginTest@5276e6b0]" started-at="2026-01-14T15:14:39 IST" name="tearDown" finished-at="2026-01-14T15:14:39 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
